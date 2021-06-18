@@ -1,10 +1,15 @@
 import React from 'react';
+import Button from './components/Button' 
 
 const App = () => {
+
+  const onClick = () => {
+    alert('test')
+  }
   return (
     <div className="App">
        <h1>Hello Ionic world</h1>
-     <p>Let's do it</p>
+     <Button onClick={onClick}>Ionic button</Button>
     </div>
   );
 }
